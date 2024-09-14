@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="input-part">
+          <input type="text" class="input-area" id="input-area"/>
+        </div>
+        <div class="num-sign">
+          <table class="table">
+            <button class="buttons type1" onclick="appendValue('7')">7</button>
+            <button class="buttons" onclick="appendValue('8')">8</button>
+            <button class="buttons" onclick="appendValue('9')">9</button>
+            <button class="buttons" style="background-color: #63729d; padding: 10px 36px; color: white;" onclick="deleteValue()">DEL</button>
+          </table>
+
+          <table class="table">
+            <button class="buttons" onclick="appendValue('4')">4</button>
+            <button class="buttons" onclick="appendValue('5')">5</button>
+            <button class="buttons" onclick="appendValue('6')">6</button>
+            <button class="buttons" onclick="appendValue('+')">+</button>
+          </table>
+
+          <table class="table">
+            <button class="buttons" onclick="appendValue('1')">1</button>
+            <button class="buttons" onclick="appendValue('2')">2</button>
+            <button class="buttons" onclick="appendValue('3')">3</button>
+            <button class="buttons" onclick="appendValue('-')">-</button>
+          </table>
+
+          <table class="table">
+            <button class="buttons" onclick="appendValue('.')">.</button>
+            <button class="buttons" onclick="appendValue('0')">0</button>
+            <button class="buttons" onclick="appendValue('/')">/</button>
+            <button class="buttons" onclick="appendValue('x')">x</button>
+          </table>
+
+          <table class="table">
+            <button class="button-button" style="background-color: #63729d;" onclick="resetValue()">RESET</button>
+            <button class="button-button" style="background-color: #d13f30;" onclick="calculateValue()">=</button>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
