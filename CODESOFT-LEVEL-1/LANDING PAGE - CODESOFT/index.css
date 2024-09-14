@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  color: rgb(40, 37, 37);
+  transition: smooth 1s;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* navbar section starts from here  */
+.header-section{
+  background-color: #f8f8f8;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10%;
+  animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo{
+    text-decoration: none;
+    color:  rgb(40, 37, 37);
+}
+
+.ul-link {
+  list-style: none;
+}
+
+nav{
+    margin-top: 8px;
+}
+.list{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.list a {
+  text-decoration: none;
+  color: rgb(40, 37, 37);  
+  transition: all 0.3s ease 0s;
+}
+.list a:hover{
+    color: red;
+    /* border: 10px solid black; */
+}
+
+.navbar form{
+    display: flex;
+}
+ /* the header sections ends here including navbar and search icon */
+
+
+ /* The container part starts from here */
+.col-12 span{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+
+}
+
+ .col-md-6 {
+    display: flex; 
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.col-12{
+  margin-bottom: 1rem;
+}
+
+.col-12 input{
+  padding: 1%;
+}
+
+.animationFromRight{
+  animation: slideInFromRight 1s  ease-in-out;
+  transition: smooth;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(175%); /* Start from off-screen to the right */
+    opacity: 0; /* Start hidden */
+  }
+  100% {
+    transform: translateX(0); /* End at the original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.button{
+  padding: 1% 3%;
+    /* border: 1px solid black; */
+    background: #741e1e;
+    color: white;
+    transition: 1s smooth ease-in;
+}
+
+.button:hover{
+  border: 1px solid #741e1e;
+  background: none;
+  color: black;
+}
+
+/* Second section starts from here  */
+
+
+/* Second section ends here */
+
+/* Third section starts from here  */
+
+
+
+/* Third section end here  */
+
+
